@@ -66,6 +66,7 @@ const PostComposer = (props) => {
 					<button
 						className={`${styles.btn} ${styles.postBtn}`}
 						onClick={e => {
+							if(msg.trim() == '' && gifs.length == 0) return;
 							addNewPost();
 							closePostComposer();
 						}}
