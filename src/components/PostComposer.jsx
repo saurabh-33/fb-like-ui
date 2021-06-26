@@ -2,6 +2,7 @@ import { Gif } from '@giphy/react-components';
 import React, { useState, useEffect } from 'react'
 import GifModal from './GifModal';
 import styles from './PostComposer.module.css'
+import profilePic from './../../assets/images/avatar.jpg';
 
 const PostComposer = (props) => {
 
@@ -40,7 +41,7 @@ const PostComposer = (props) => {
 		<div className={styles.backdrop}>
 			<div className={styles.modal}>
 				<div className={styles.composer}>
-					<img src="../../assets/images/avatar.jpg" alt="profile" className={styles.profile} width='60' height='60' />
+					<img src={profilePic} alt="profile" className={styles.profile} width='60' height='60' />
 					<textarea 
 						autoFocus
 						value={msg}
