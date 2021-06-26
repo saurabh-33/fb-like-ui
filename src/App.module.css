@@ -11,8 +11,9 @@
     padding: 15px;
     background-color: var(--color-primary);
     color: var(--color-light);
-    font-family: var(--font-primary);
     border-radius: var(--rounded-md);
+    font-family: var(--font-primary);
+    font-size: 1.2rem;
 }
 .heading {
     font-family: var(--font-primary);
