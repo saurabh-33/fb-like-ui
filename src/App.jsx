@@ -8,12 +8,14 @@ function App() {
 
   const [posts, setPosts] = useState([]);
 
-  const toggleState = state => !state; 
+  const openPostComposer = e => {
+    setPostComposerState(true);
+  }
 
   return (
     <>
       <main className={styles.contentArea}>
-        <button className={styles.createPostBtn} onClick={() => setPostComposerState(toggleState)}>Create Post</button>
+        <button className={styles.createPostBtn} onClick={openPostComposer}>Create Post</button>
         <h2 className={styles.heading}>All Posts</h2>
         <section>
           {
