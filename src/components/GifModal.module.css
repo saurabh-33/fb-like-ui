@@ -18,6 +18,14 @@
   border-style: solid;
   border-color: transparent transparent white transparent;
 }
+.closeBtn {
+  display: block;
+  margin: 0 0 10px auto;
+}
+.closeBtn:hover {
+  color: var(--color-danger);
+  /* color: red; */
+}
 .search {
   display: block;
   width: 200px;

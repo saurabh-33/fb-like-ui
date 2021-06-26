@@ -57,7 +57,7 @@ const PostComposer = (props) => {
 						<div className={styles.addGIfWrapper}>
 							<button className={styles.addGifBtn} onClick={() => setGifModalState(true)}>+ gif</button>
 							{
-								isGifModalActive && <GifModal setGifs={setGifs} />
+								isGifModalActive && <GifModal setGifs={setGifs} setGifModalState={setGifModalState} />
 							}
 						</div>
 					</div>
